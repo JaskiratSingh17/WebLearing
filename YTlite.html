@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+
+        body{
+            background-color: whitesmoke;
+        }
+
+        .Navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            flex-wrap: wrap;
+            top: 0;
+            left: 0px;
+            right: 0px;    
+            background-color: white;        
+        }
+
+        #leftnav,#search,.rightnav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #leftnav{
+            margin-left: 20px;
+        }
+
+        .rightnav{
+            margin-right: 20px;
+        }
+
+        #option{
+            width: 27px;
+            font-size: smaller;
+        }
+
+        #ytlogo{
+            height: 55px;
+            margin-left: 5px;
+        }
+
+        #searchbar{
+            height: 31.5px;
+            max-width: 400px;
+            min-width: 50%;
+            margin: auto;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: 1px rgb(69, 69, 69) solid;
+        }
+
+        #searchicon{
+            padding-left: 10px;
+            padding-right: 25px;
+            border: 1px rgb(69, 69, 69) solid;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .icon{
+            mix-blend-mode: darken;
+            height: 28px;
+        }
+
+        #mic{
+            margin-left: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 5px;
+            padding-bottom: 2px;
+            border-radius: 50%;
+        }
+
+        #op{
+            font-size: xx-small;
+            margin-right: 20px;
+        }
+
+        #sign{
+            border: 1px rgb(69, 69, 69) solid;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-radius: 23px;
+            color: rgb(0, 140, 255);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .Image{
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .Videos{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        #Image{
+            display: block;
+            height: 200px;
+            width: 350px;
+            border: 1px rgb(69, 69, 69, 0.9) solid;
+            border-radius: 10px;
+        }
+
+        .time{
+            position: absolute;
+            bottom: 10px;
+            color: white;
+            background-color: rgba(54, 54, 54, 0.9);
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            left: 300px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Navigation Bar for youtube lite-->
+    <div class="Navbar">
+        <div id="leftnav">
+            <div id="option"><hr><hr><hr></div>
+            <div id="ytlogo">
+                <img src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg" id="ytlogo">
+            </div>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="   Search" id="searchbar">
+            <button id="searchicon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bd-o2iClEsR4G-NcgUfpYZXdEvx7VdgnbQ&s" class="icon"></button>
+            <button id="mic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYLnU7D-8FxicmV4R3rHteqAGb6q1TKKL0Nw&s" class="icon"></button>
+        </div>
+        <div class="rightnav">
+            <div id="op">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <button id="sign">Sign in</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Videos">
+        <div class="Image">
+            <img src="https://www.worldbank.org/content/dam/photos/780x439/2020/mar-5/Board-Meeting_2019.jpg" id="Image">
+            <div class="time">
+                19:30
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="https://www.worldbank.org/content/dam/photos/780x439/2020/mar-5/Board-Meeting_2019.jpg" id="Image">
+            <div class="time">
+            19:30
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="https://www.worldbank.org/content/dam/photos/780x439/2020/mar-5/Board-Meeting_2019.jpg" id="Image">
+            <div class="time">
+            19:30
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="https://www.worldbank.org/content/dam/photos/780x439/2020/mar-5/Board-Meeting_2019.jpg" id="Image">
+            <div class="time">
+            19:30
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="https://www.worldbank.org/content/dam/photos/780x439/2020/mar-5/Board-Meeting_2019.jpg" id="Image">
+            <div class="time">
+            19:30
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="https://www.worldbank.org/content/dam/photos/780x439/2020/mar-5/Board-Meeting_2019.jpg" id="Image">
+            <div class="time">
+            19:30
+            </div>
+        </div>
+    </div>
+</body>
+</html>
