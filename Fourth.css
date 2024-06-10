@@ -1,0 +1,79 @@
+
+.square{
+    color: rgb(0, 0, 0);
+    background-color: cyan;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    height: 150px;
+    width: 150px;
+    animation: square 10s infinite linear;
+    position: absolute;
+    text-align: center;
+}
+.square:hover{
+    height: 200px;
+    width: 200px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.content{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+}
+
+h1{
+    background-color: rgb(150, 245, 248);
+    border: 1px blue solid;
+    border-radius: 5px;
+    margin-top: 200px;
+}
+
+p{
+    background-color: antiquewhite;
+    border: 1px brown solid;
+    border-radius: 3px;
+    height: 100px;
+}
+
+#p2{
+    font-size: 82px;
+}
+
+body{
+    background-color: rgb(246, 255, 122);
+}
+
+@keyframes square{
+    0%{
+        transform: rotate(0deg);
+        left: 0;
+        top: 0;
+    }
+    25%{
+        transform: rotate(-90deg);
+        left: 1200px;
+        top:0;
+    }
+    50%{
+        transform: rotate(90deg);
+        left: 1200px;
+        top: 600px;
+    }
+    75%{
+        transform: rotate(-90deg);
+        left: 0;
+        top: 600px;
+    }
+
+
+    100%{
+        transform: rotate(0deg);
+        left: 0;
+        top: 0;
+    }
+}
